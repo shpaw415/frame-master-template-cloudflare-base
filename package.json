@@ -16,6 +16,7 @@
     "frame-master-plugin-assets-to-build": "^0.1.0",
     "frame-master-plugin-image-optimizer": "^0.1.0",
     "frame-master-plugin-react-to-html": "0.2.0",
+    "frame-master-plugin-seo": "https://github.com/shpaw415/frame-master-plugin-seo.git",
     "frame-master-plugin-tailwind": "1.1.2",
     "frame-master-svg-to-jsx-loader": "^0.1.0",
     "react": "^19.2.4",

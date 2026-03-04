@@ -1,6 +1,4 @@
-import type { ReactNode } from "react";
-
-export default function Layout({ children }: { children: ReactNode }) {
+export default function Layout({ children }: { children: React.JSX.Element }) {
   return (
     <div className="min-h-screen bg-slate-950 text-white selection:bg-blue-500/30">
       {/* Layout Header - Persists across pages */}

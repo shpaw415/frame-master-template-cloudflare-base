@@ -5,6 +5,9 @@ import TailwindPlugin from "frame-master-plugin-tailwind";
 import imageOptimizer from "frame-master-plugin-image-optimizer";
 import AssetsToBuild from "frame-master-plugin-assets-to-build";
 import SVGLoader from "frame-master-svg-to-jsx-loader";
+import SEOPlugin from "frame-master-plugin-seo";
+import SEO from "./SEO.config";
+import { builder } from "frame-master/build";
 
 export default {
   HTTPServer: {
@@ -34,7 +37,7 @@ export default {
       skipExisting: true,
       formats: ["webp"],
       keepOriginal: true,
-      sizes: [300, 720, 1280],
+      sizes: [320, 720, 1280],
     }),
     SVGLoader(),
     AssetsToBuild({
@@ -47,8 +50,13 @@ export default {
           src: "static/favicon.ico",
           dist: "favicon.ico",
         },
+        {
+          src: "assets",
+          dist: "assets",
+        },
       ],
     }),
+    SEOPlugin(SEO),
     {
       name: "static-assets",
       version: "1.0.0",
@@ -58,6 +66,15 @@ export default {
             asset: "[dir]/[name].[ext]",
           },
         },
+      },
+    },
+    {
+      name: "dev-plugin",
+      version: "1.0.0",
+      fileSystemWatchDir: ["src"],
+      async onFileSystemChange(ev, fp, abs) {
+        if (!abs.startsWith("src/") || builder?.isBuilding()) return;
+        await builder?.build();
       },
     },
   ],

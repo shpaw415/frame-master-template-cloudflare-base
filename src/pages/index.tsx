@@ -1,3 +1,5 @@
+import Logo from "@images/logo.png";
+
 export default function HomePage() {
   return (
     <div>
@@ -9,7 +11,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4 text-center">
           <div className="mb-8 inline-flex items-center justify-center p-2 bg-slate-900/50 rounded-2xl border border-slate-800 backdrop-blur-sm">
             <img
-              src="./static/logo.webp"
+              src={Logo.src(720)}
               alt="Logo"
               className="w-16 h-16 object-contain"
             />
