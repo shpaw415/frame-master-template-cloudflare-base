@@ -1,6 +1,6 @@
-# Frame Master Template: Cloudflare Pages + React + Tailwind CSS
+# Frame Master Template: Cloudflare Base
 
-A modern, high-performance starter template for building React applications deployed to Cloudflare Pages, styled with Tailwind CSS, and orchestrated by Frame Master.
+A modern, high-performance base starter template for building React applications deployed to Cloudflare Pages, styled with Tailwind CSS, and orchestrated by Frame Master. This template is based on the `cloudflare-react-tailwindcss` template but serves as the foundational base.
 
 ![Frame Master Template](https://img.shields.io/badge/Frame%20Master-Template-blueviolet)
 ![React](https://img.shields.io/badge/React-19-blue)
@@ -15,6 +15,9 @@ A modern, high-performance starter template for building React applications depl
 - **Cloudflare Pages**: Deploys instantly to the edge with global low latency.
 - **Frame Master**: Integrated workflow for seamless development and plugin management.
 - **Bun**: Lightning-fast JavaScript runtime and package manager.
+- **Image Optimization**: Built-in image optimizer supporting WebP and responsive sizes.
+- **SVG Loader**: Import and use SVGs directly as React components.
+- **SEO Optimization**: Comprehensive SEO configuration out-of-the-box.
 - **Client-Side HMR**: Instant feedback during development.
 - **TypeScript**: Type-safe development for better code quality.
 
