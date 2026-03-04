@@ -6,7 +6,8 @@ import imageOptimizer from "frame-master-plugin-image-optimizer";
 import AssetsToBuild from "frame-master-plugin-assets-to-build";
 import SVGLoader from "frame-master-svg-to-jsx-loader";
 import SEOPlugin from "frame-master-plugin-seo";
-import SEO from "./SEO.config";
+import SiteConfig from "./site.config";
+import AutoSiteMap from "frame-master-plugin-auto-sitemap";
 import { builder } from "frame-master/build";
 
 export default {
@@ -54,9 +55,17 @@ export default {
           src: "assets",
           dist: "assets",
         },
+        {
+          src: "robots.txt",
+          dist: "robots.txt",
+        },
       ],
     }),
-    SEOPlugin(SEO),
+    SEOPlugin(SiteConfig.SEO),
+    AutoSiteMap({
+      baseUrl: SiteConfig.siteUrl,
+      authorizedExtensions: ["html"],
+    }),
     {
       name: "static-assets",
       version: "1.0.0",
