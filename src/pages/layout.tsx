@@ -9,7 +9,7 @@ export default function Layout({ children }: { children: React.JSX.Element }) {
               FM
             </div>
             <div className="flex flex-col">
-              <span className="font-bold text-lg tracking-tight leading-none bg-clip-text text-transparent bg-gradient-to-r from-white to-slate-400">
+              <span className="font-bold text-lg tracking-tight leading-none bg-clip-text text-transparent bg-linear-to-r from-white to-slate-400">
                 Frame Master
               </span>
               <span className="text-[10px] text-slate-500 font-mono uppercase tracking-wider leading-none mt-1">

@@ -5,8 +5,8 @@ export default function HomePage() {
     <div>
       {/* Hero Section */}
       <header className="relative overflow-hidden pt-32 pb-20 lg:pt-48 lg:pb-32">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-blue-500/20 rounded-full blur-[120px] -z-10 opacity-50 pointer-events-none" />
-        <div className="absolute bottom-0 right-0 w-[800px] h-[600px] bg-purple-500/10 rounded-full blur-[100px] -z-10 opacity-30 pointer-events-none" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-250 h-125 bg-blue-500/20 rounded-full blur-[120px] -z-10 opacity-50 pointer-events-none" />
+        <div className="absolute bottom-0 right-0 w-200 h-150 bg-purple-500/10 rounded-full blur-[100px] -z-10 opacity-30 pointer-events-none" />
 
         <div className="container mx-auto px-4 text-center">
           <div className="mb-8 inline-flex items-center justify-center p-2 bg-slate-900/50 rounded-2xl border border-slate-800 backdrop-blur-sm">
